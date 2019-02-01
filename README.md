@@ -1,0 +1,1 @@
+In this project we want to learn basics of Python 
