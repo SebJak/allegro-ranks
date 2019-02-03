@@ -1,0 +1,467 @@
+{
+   "items":{
+      "promoted":[
+
+      ],
+      "regular":[
+         {
+            "id":"6205687315",
+            "name":"Oświetlenie obudowy SilentiumPC Aurora II Remote R",
+            "seller":{
+               "id":"44055980",
+               "company":false,
+               "superSeller":false
+            },
+            "promotion":{
+               "emphasized":false,
+               "bold":false,
+               "highlight":false
+            },
+            "delivery":{
+               "availableForFree":true,
+               "lowestPrice":{
+                  "amount":"0.00",
+                  "currency":"PLN"
+               }
+            },
+            "images":[
+               {
+                  "url":"https://a.allegroimg.allegrosandbox.pl/original/fe3386/50a4c98f43fc85c5bed9fde2a6da"
+               },
+               {
+                  "url":"https://c.allegroimg.allegrosandbox.pl/original/fea45f/024b04b0413f83b83cae4e89285c"
+               },
+               {
+                  "url":"https://0.allegroimg.allegrosandbox.pl/original/febf9f/de09236f47abb7c51c75b602d950"
+               },
+               {
+                  "url":"https://3.allegroimg.allegrosandbox.pl/original/fe97b9/1a956a6a4455b2af4e79d3565273"
+               },
+               {
+                  "url":"https://9.allegroimg.allegrosandbox.pl/original/feacaf/ebfdac714829b16d23c8e7788f99"
+               },
+               {
+                  "url":"https://d.allegroimg.allegrosandbox.pl/original/fe6c65/c043c8504039bba8723d5544355d"
+               },
+               {
+                  "url":"https://4.allegroimg.allegrosandbox.pl/original/fe50ee/a15da483453fa4fc31ba53998a14"
+               },
+               {
+                  "url":"https://5.allegroimg.allegrosandbox.pl/original/fe8ef4/1d434127480d92d9b2883c900035"
+               }
+            ],
+            "sellingMode":{
+               "format":"BUY_NOW",
+               "price":{
+                  "amount":"48.00",
+                  "currency":"PLN"
+               },
+               "popularity":0
+            },
+            "stock":{
+               "unit":"UNIT",
+               "available":1
+            },
+            "category":{
+               "id":"4694"
+            }
+         }
+      ]
+   },
+   "searchMeta":{
+      "availableCount":1,
+      "totalCount":1,
+      "fallback":false
+   },
+   "categories":{
+      "subcategories":[
+         {
+            "id":"45905",
+            "name":"Chłodzenie dysku i napędów",
+            "count":1
+         },
+         {
+            "id":"4694",
+            "name":"Elementy oświetleniowe",
+            "count":1
+         }
+      ],
+      "path":[
+         {
+            "id":"954b95b6-43cf-4104-8354-dea4d9b10ddf",
+            "name":"Allegro"
+         },
+         {
+            "id":"42540aec-367a-4e5e-b411-17c09b08e41f",
+            "name":"Elektronika"
+         },
+         {
+            "id":"2",
+            "name":"Komputery"
+         },
+         {
+            "id":"497",
+            "name":"Akcesoria (Laptop, PC)"
+         },
+         {
+            "id":"4687",
+            "name":"Chłodzenie i tuning"
+         },
+         {
+            "id":"4694",
+            "name":"Elementy oświetleniowe"
+         }
+      ]
+   },
+   "filters":[
+      {
+         "id":"parameter.11323",
+         "type":"MULTI",
+         "name":"Stan",
+         "values":[
+            {
+               "value":"1",
+               "name":"nowe",
+               "count":1,
+               "selected":false
+            }
+         ]
+      },
+      {
+         "id":"sellingMode.format",
+         "type":"MULTI",
+         "name":"rodzaj oferty",
+         "values":[
+            {
+               "value":"BUY_NOW",
+               "name":"kup teraz",
+               "count":1,
+               "selected":false
+            },
+            {
+               "value":"AUCTION",
+               "name":"licytacje",
+               "count":0,
+               "selected":false
+            }
+         ]
+      },
+      {
+         "id":"price",
+         "type":"NUMERIC",
+         "name":"cena (zł)",
+         "values":[
+            {
+               "idSuffix":".from",
+               "name":"od",
+               "selected":false
+            },
+            {
+               "idSuffix":".to",
+               "name":"do",
+               "selected":false
+            }
+         ],
+         "minValue":0,
+         "maxValue":1000000000
+      },
+      {
+         "id":"deliveryMethod",
+         "type":"MULTI",
+         "name":"sposoby dostawy",
+         "values":[
+            {
+               "value":"listing kurier",
+               "name":"Kurier",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"listing Kurier wieczór",
+               "name":"Kurier wieczór",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"listing Paczkomaty InPost",
+               "name":"Paczkomaty InPost",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"listing odbiór w punkcie",
+               "name":"Odbiór w punkcie",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"listing list",
+               "name":"List",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"listing paczka",
+               "name":"Paczka",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"listing odbiór osobisty",
+               "name":"Odbiór osobisty",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"listing przesyłka elektroniczna",
+               "name":"Przesyłka elektroniczna",
+               "count":0,
+               "selected":false
+            }
+         ]
+      },
+      {
+         "id":"location.province",
+         "type":"SINGLE",
+         "name":"województwo",
+         "values":[
+            {
+               "value":"DOLNOSLASKIE",
+               "name":"z dolnośląskiego",
+               "selected":false
+            },
+            {
+               "value":"KUJAWSKO_POMORSKIE",
+               "name":"z kujawsko-pomorskiego",
+               "selected":false
+            },
+            {
+               "value":"LUBELSKIE",
+               "name":"z lubelskiego",
+               "selected":false
+            },
+            {
+               "value":"LUBUSKIE",
+               "name":"z lubuskiego",
+               "selected":false
+            },
+            {
+               "value":"LODZKIE",
+               "name":"z łódzkiego",
+               "selected":false
+            },
+            {
+               "value":"MALOPOLSKIE",
+               "name":"z małopolskiego",
+               "selected":false
+            },
+            {
+               "value":"MAZOWIECKIE",
+               "name":"z mazowieckiego",
+               "selected":false
+            },
+            {
+               "value":"OPOLSKIE",
+               "name":"z opolskiego",
+               "selected":false
+            },
+            {
+               "value":"PODKARPACKIE",
+               "name":"z podkarpackiego",
+               "selected":false
+            },
+            {
+               "value":"PODLASKIE",
+               "name":"z podlaskiego",
+               "selected":false
+            },
+            {
+               "value":"POMORSKIE",
+               "name":"z pomorskiego",
+               "selected":false
+            },
+            {
+               "value":"SLASKIE",
+               "name":"ze śląskiego",
+               "selected":false
+            },
+            {
+               "value":"SWIETOKRZYSKIE",
+               "name":"ze świętokrzyskiego",
+               "selected":false
+            },
+            {
+               "value":"WARMINSKO_MAZURSKIE",
+               "name":"z warmińsko-mazurskiego",
+               "selected":false
+            },
+            {
+               "value":"WIELKOPOLSKIE",
+               "name":"z wielkopolskiego",
+               "selected":false
+            },
+            {
+               "value":"ZACHODNIOPOMORSKIE",
+               "name":"z zachodniopomorskiego",
+               "selected":false
+            }
+         ]
+      },
+      {
+         "id":"location.city",
+         "type":"TEXT",
+         "name":"miejscowość",
+         "values":[
+            {
+               "name":"miejscowość",
+               "selected":false
+            }
+         ]
+      },
+      {
+         "id":"parameter.525",
+         "type":"MULTI",
+         "name":"Rodzaj",
+         "values":[
+            {
+               "value":"1",
+               "name":"Katody",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"2",
+               "name":"Wentylatory",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"3",
+               "name":"LED",
+               "count":0,
+               "selected":false
+            },
+            {
+               "value":"4",
+               "name":"Pozostałe",
+               "count":0,
+               "selected":false
+            }
+         ]
+      },
+      {
+         "id":"option",
+         "type":"MULTI",
+         "name":"oferta ma",
+         "values":[
+            {
+               "value":"FREE_SHIPPING",
+               "name":"darmowa dostawa",
+               "selected":false
+            },
+            {
+               "value":"FREE_RETURN",
+               "name":"darmowy zwrot InPost",
+               "selected":false
+            },
+            {
+               "value":"VAT_INVOICE",
+               "name":"faktura VAT",
+               "selected":false
+            },
+            {
+               "value":"COINS",
+               "name":"Monety Allegro",
+               "selected":false
+            },
+            {
+               "value":"BRAND_ZONE",
+               "name":"Strefa Marek",
+               "selected":false
+            },
+            {
+               "value":"SUPERSELLER",
+               "name":"Super Sprzedawca",
+               "selected":false
+            },
+            {
+               "value":"CHARITY",
+               "name":"cel charytatywny",
+               "selected":false
+            },
+            {
+               "value":"SMART",
+               "name":"Allegro Smart!",
+               "selected":false
+            }
+         ]
+      },
+      {
+         "id":"campaign",
+         "type":"MULTI",
+         "name":"kampania",
+         "values":[
+            {
+               "value":"BARGAIN",
+               "name":"Strefa Okazji",
+               "selected":false
+            },
+            {
+               "value":"BARGAIN_REBATE",
+               "name":"rabaty",
+               "selected":false
+            }
+         ]
+      }
+   ],
+   "sort":[
+      {
+         "value":"-relevance",
+         "name":"trafność",
+         "order":"największa",
+         "selected":true
+      },
+      {
+         "value":"+price",
+         "name":"cena",
+         "order":"od najniższej",
+         "selected":false
+      },
+      {
+         "value":"-price",
+         "name":"cena",
+         "order":"od najwyższej",
+         "selected":false
+      },
+      {
+         "value":"+withDeliveryPrice",
+         "name":"cena z dostawą",
+         "order":"od najniższej",
+         "selected":false
+      },
+      {
+         "value":"-withDeliveryPrice",
+         "name":"cena z dostawą",
+         "order":"od najwyższej",
+         "selected":false
+      },
+      {
+         "value":"-popularity",
+         "name":"popularność",
+         "order":"największa",
+         "selected":false
+      },
+      {
+         "value":"+endTime",
+         "name":"czas do końca",
+         "order":"najmniej",
+         "selected":false
+      },
+      {
+         "value":"-startTime",
+         "name":"czas dodania",
+         "order":"najnowsze",
+         "selected":false
+      }
+   ]
+}
