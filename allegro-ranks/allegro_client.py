@@ -21,11 +21,10 @@ class AllegroClient(object):
     
     def get(self, path):
         headers = {'Authorization': 'Bearer' + self.access_tocken, 'Accept': 'application/vnd.allegro.public.v1+json'}
-        print("access_tocken: " + self.access_tocken + 'url: ' + self.url + path)
         response = requests.get(self.url + path, headers=headers)
         if(response.status_code == 200):
             return json.loads(response.content)
-        raise ConnectionError('Error during geting data from: ' + self.url + path + ' Status code: ' + response.status_code)
+        raise Exception('Error during geting data from: ' + self.url + path + " Status code: "+ str(response.status_code))
         
     def __getAccessToken(self, clientId, secret): #TODO we should have the dynamic auth address depend on env
         response = requests.post('https://allegro.pl.allegrosandbox.pl/auth/oauth/token?grant_type=client_credentials',\
