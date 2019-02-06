@@ -48,7 +48,7 @@ for category in categories.categories:
 #stat = CategoryStat('4694', 'Electronicka', offersFromFile)
 #categoriesStats.append(stat.asCsvRow())
 
-with open('./data/categoryStats.csv', 'w') as csv_file:
+with open('../data/categoryStats.csv', 'w') as csv_file:
     wr = csv.writer(csv_file, delimiter=',')
     wr.writerows(categoriesStats)
 

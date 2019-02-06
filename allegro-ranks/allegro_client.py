@@ -27,7 +27,7 @@ class AllegroClient(object):
         raise Exception('Error during geting data from: ' + self.url + path + " Status code: "+ str(response.status_code))
         
     def __getAccessToken(self, clientId, secret): #TODO we should have the dynamic auth address depend on env
-        response = requests.post('https://allegro.pl.allegrosandbox.pl/auth/oauth/token?grant_type=client_credentials',\
+        response = requests.post('https://allegro.pl/auth/oauth/token?grant_type=client_credentials',\
                                  auth=(clientId, secret))
         if(response.status_code == 200):
             return json.loads(response.text)['access_token']

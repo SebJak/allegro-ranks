@@ -1,3 +1,5 @@
 credentials.json
 __pycache__/
 .idea/
+allegro_ranks.egg-info/
+
