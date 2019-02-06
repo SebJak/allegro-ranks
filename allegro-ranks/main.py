@@ -35,22 +35,22 @@ categories = CategoryList(allegroClient.get('/categories')['categories'])
 categoriesStats = [['CategoryId', 'Name', 'AvailableCount', 'TotalCount']]
 #
 print('Categories count: '+ str(len(categories.categories))) #31017
-for category in categories.categories:
-    try:
-        stat = CategoryStat(category.id, category.name, allegroClient.get('/offers/listing?category.id=' + category.id + '&limit=1'))
-        categoriesStats.append(stat.asCsvRow())
-    except Exception as ex:
-        print("Exception during processing data for category:" + category.name + ":"+ category.id +" "+ format(ex))
+with open('../data/categoryStats.csv', 'a') as csv_file:
+    wr = csv.writer(csv_file, delimiter=',')
+    wr.writerows(categoriesStats)
+    for category in categories.categories:
+        try:
+            stat = CategoryStat(category.id, category.name, allegroClient.get('/offers/listing?category.id=' + category.id + '&limit=1'))
+            categoriesStats.append(stat.asCsvRow())
+            wr.writerow(stat.asCsvRow())
+        except Exception as ex:
+            print("Exception during processing data for category:" + category.name + ":"+ category.id +" "+ format(ex))
 
 #with open('../sample/offers-sample.json', 'r') as jsonOffers:
 #    offersFromFile = json.load(jsonOffers)
 #
 #stat = CategoryStat('4694', 'Electronicka', offersFromFile)
 #categoriesStats.append(stat.asCsvRow())
-
-with open('../data/categoryStats.csv', 'w') as csv_file:
-    wr = csv.writer(csv_file, delimiter=',')
-    wr.writerows(categoriesStats)
 
 csv_file.close();
         
