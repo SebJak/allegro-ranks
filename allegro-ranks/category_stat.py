@@ -12,12 +12,16 @@ class CategoryStat(object):
         self.id = categoryId
         self.availableCount = attributes['searchMeta']['availableCount']
         self.totalCount = attributes['searchMeta']['totalCount']
+        self.path = ''
+        for path in attributes['categories']['path']:
+            self.path += path['name'] +'/'
+        print(self.path)
         
     def __str__(self):
         return "CategoryStat: " + self.name + ":"+ self.id + " , totalCount: " + self.totalCount
     
     def __iter__(self):
-        return iter([self.id, self.name, self.availableCount, self.totalCount])
+        return iter([self.id, self.name, self.path, self.availableCount, self.totalCount])
     
     def asCsvRow(self):
-        return [self.id, self.name, self.availableCount, self.totalCount]
+        return [self.id, self.name, self.path, self.availableCount, self.totalCount]

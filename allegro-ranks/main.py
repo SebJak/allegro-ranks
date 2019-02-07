@@ -1,5 +1,7 @@
 import json
 import csv
+import datetime
+
 from category_list import CategoryList
 from allegro_client import AllegroClient
 from category_stat import CategoryStat
@@ -21,6 +23,7 @@ from offer import Offer
 #for item in offersFromFile['items']['regular']:
 #    items.append(Offer(item))
 
+now = datetime.datetime.now()
 
 try:
     with open('credentials.json', 'r') as f:
@@ -32,16 +35,16 @@ allegroClient = AllegroClient(credentials['env'], credentials['clientId'], crede
 
 categories = CategoryList(allegroClient.get('/categories')['categories'])
 
-categoriesStats = [['CategoryId', 'Name', 'AvailableCount', 'TotalCount']]
+categoriesStats = [['CategoryId', 'Name', 'Path', 'AvailableCount', 'TotalCount']]
 #
-print('Categories count: '+ str(len(categories.categories))) #31017
-with open('../data/categoryStats.csv', 'a') as csv_file:
+print('Categories count:', len(categories.categories)) #31017 sandbox 24096 prod
+with open('../data/categoryStats'+str(now)+'.csv', 'w') as csv_file:
     wr = csv.writer(csv_file, delimiter=',')
     wr.writerows(categoriesStats)
     for category in categories.categories:
         try:
             stat = CategoryStat(category.id, category.name, allegroClient.get('/offers/listing?category.id=' + category.id + '&limit=1'))
-            categoriesStats.append(stat.asCsvRow())
+            print(stat.name)
             wr.writerow(stat.asCsvRow())
         except Exception as ex:
             print("Exception during processing data for category:" + category.name + ":"+ category.id +" "+ format(ex))
