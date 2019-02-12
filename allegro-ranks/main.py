@@ -43,7 +43,8 @@ with open('../data/categoryStats'+str(now)+'.csv', 'w') as csv_file:
     wr.writerows(categoriesStats)
     for category in categories.categories:
         try:
-            stat = CategoryStat(category.id, category.name, allegroClient.get('/offers/listing?category.id=' + category.id + '&limit=1'))
+            stat = CategoryStat(category.id, category.name,\
+                                allegroClient.get('/offers/listing?category.id=' + category.id + '&limit=1')) #FIXME do not concatenate string like that
             print(stat.name)
             wr.writerow(stat.asCsvRow())
         except Exception as ex:
